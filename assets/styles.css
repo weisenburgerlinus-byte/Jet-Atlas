@@ -1,0 +1,305 @@
+:root {
+    color-scheme: light;
+    --bg: #f2efe7;
+    --panel: #fffdf7;
+    --panel2:  #e7e5dd;
+    --line: rgba(37,46,48,.15);
+    --text: #252e30;
+    --muted: #667147;
+    --accent: #a6522f;
+    --orange: #b27c45;
+    --serif: Georgia,'Times New Roman',serif;
+    --sans: Arial,Helvetica,sans-serif;
+    --mono: 'Courier New',ui-monospace,monospace
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+}
+
+a {
+    color: inherit
+}
+
+button,input {
+    font: inherit
+}
+
+.shell {
+    width: min(1180px,calc(100% - 56px));
+    margin: auto;
+}
+.topbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .14em
+}
+.brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-items: var(--accent);
+    color: #fffdf7;
+    font-size: 18px
+}
+.brand-muted {
+    color: var(--muted);
+    font-weight: 500;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    grid-area: 25px;
+    color: var(--muted);
+    font-size: 12px;
+}
+.nav a {
+    text-decoration: none
+}
+.nav a:hover {
+    color: var(--accent);
+}
+.crumb {
+    font-size: 11px;
+    color: var(--muted);
+    margin: 24px 0;
+}
+.crumb a {
+    text-decoration: none;
+}
+.crumb a:hover {
+    color: var(--accent);
+}
+.crumb span {
+    padding: 0 8px;
+    color: #606a61;
+}
+.eyebrow  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent);
+    font: 500 10px var(--mono);
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.eyebrow:before {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: currentColor
+}
+h1,h2,h3,p {
+    margin-top: 0;
+}
+.home-hero {
+    padding: 80px 0 48px;
+    max-width: 790px;
+}
+.home-hero h1,.maker-hero h1,.detail-copy h1 {
+    font: 400 clamp(50px,7vw,84px)/1.02 var(--serif);
+    letter-spacing: -.06em;
+    margin: 24px 0;
+}
+.home-hero h1 em,.maker-hero h1 em,.detail-copy h1 em {
+    color: var(--accent);
+    font-weight: 400
+}
+.home-hero p,.maker-hero p,.detail-copy .intro {
+    max-width: 610px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.section {
+    padding: 36px 0 86px;
+}
+.section-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.section-title h2 {
+    font: 400 38px var(--serif);
+    letter-spacing: -.04em;
+    margin: 12px 0 0
+}
+.section-title p {
+    max-width: 300px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 3px;
+}
+   .maker-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+.maker-card {
+    position: relative;
+    min-height: 325px;
+    padding: 26px;
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg,#fffdf7,#e9ece7);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none;
+    transition: .25s
+}
+.maker-card:hover {
+    border-color: rgba(166,83,63,.28);
+    transform: translateY(-2px);
+}
+.maker-card .maker-index {
+    font: 10px var(--mono);
+    color: var(--accent);
+    letter-spacing: .16em;
+}
+.maker-card .maker-art {
+    position: absolute;
+    width: 64%;
+    right: 0;
+    top: 53px;
+    opacity: .32;
+    transform: rotate(-14deg);
+    transition: .4s;
+}
+.maker-art:hover .maker-art {
+    transform: rotate(-7deg) scale(1-08);
+    opacity: .52;
+}
+.maker-art img {
+    width: 100%;
+    filter: brightness(.58) saturate(.65) drop-shadow(0 12px rgba(0, 0, 0, .12))
+}
+.maker-card h3 {
+    position: relative;
+    margin: auto 0 8px;
+    font: 400 34px var(--serif);
+}
+.maker-card p {
+    position: relative;
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+.maker-card .count {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    color: var(--accent);
+    font: 10px var(--mono);
+}
+.small-note {
+    border-top: 1px solid var(--line);
+    padding: 20px 0 32px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+.maker-hero {
+    padding: 38px 0 28px;
+}
+.maker-hero h1 {
+    font-size: clamp(52px,7vw,78px);
+    margin: 19px 0;
+}
+.maker-hero p {
+    max-width: 610px;
+    margin-bottom: 0;
+}
+.aircraft-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-area: 15px;
+}
+.aircraft-card {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: .23s;
+}
+.aircraft-card:hover {
+    border-color: rgba(166,83,63,.28);
+    transform: translateY(-2px);
+    background: #f0f1ec;
+}
+.aircraft-card .tag {
+    color: var(--accent);
+    font: 10px var(--mono);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.aircraft-card .plane-art  {
+    height: 174px;
+    display: grid;
+    place-items: center;
+}
+.aircraft-card .plane-art img {
+    width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: rotate(-10deg) scale(.9);
+    filter: brightness(.6) saturate(.6) drop-shadow(0 12px 12px rgba(0,0,0,.14));
+    transition: .3s;
+}
+.aircraft-card:hover .plane-art img {
+    transform: rotate(-4deg) scale(1);
+}
+.aircraft-card h2 {
+    margin: 0 0 7px;
+    font: 400 29px var(--serif)
+}
+.aircraft-card p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 17px;
+}
+.card-foot {
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font: 9px var(--mono);
+    letter-spacing: .06em;
+}
+.card-foot b {
+    color: var(--text);
+    font: 11px  var(--sans);
+}
