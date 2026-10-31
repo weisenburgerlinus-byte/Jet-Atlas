@@ -25,7 +25,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: var(--sans);
+    font-family: var(--sans)
 }
 
 a {
@@ -38,14 +38,14 @@ button,input {
 
 .shell {
     width: min(1180px,calc(100% - 56px));
-    margin: auto;
+    margin: auto
 }
 .topbar {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
 }
 .brand {
     display: flex;
@@ -67,35 +67,35 @@ button,input {
 }
 .brand-muted {
     color: var(--muted);
-    font-weight: 500;
+    font-weight: 500
 }
 .nav {
     display: flex;
     align-items: center;
     grid-area: 25px;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 12px
 }
 .nav a {
     text-decoration: none
 }
 .nav a:hover {
-    color: var(--accent);
+    color: var(--accent)
 }
 .crumb {
     font-size: 11px;
     color: var(--muted);
-    margin: 24px 0;
+    margin: 24px 0
 }
 .crumb a {
-    text-decoration: none;
+    text-decoration: none
 }
 .crumb a:hover {
-    color: var(--accent);
+    color: var(--accent)
 }
 .crumb span {
     padding: 0 8px;
-    color: #606a61;
+    color: #606a61
 }
 .eyebrow  {
     display: flex;
@@ -104,7 +104,7 @@ button,input {
     color: var(--accent);
     font: 500 10px var(--mono);
     letter-spacing: .09em;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .eyebrow:before {
     content: '';
@@ -113,16 +113,16 @@ button,input {
     background: currentColor
 }
 h1,h2,h3,p {
-    margin-top: 0;
+    margin-top: 0
 }
 .home-hero {
     padding: 80px 0 48px;
-    max-width: 790px;
+    max-width: 790px
 }
 .home-hero h1,.maker-hero h1,.detail-copy h1 {
     font: 400 clamp(50px,7vw,84px)/1.02 var(--serif);
     letter-spacing: -.06em;
-    margin: 24px 0;
+    margin: 24px 0
 }
 .home-hero h1 em,.maker-hero h1 em,.detail-copy h1 em {
     color: var(--accent);
@@ -132,17 +132,17 @@ h1,h2,h3,p {
     max-width: 610px;
     color: var(--muted);
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.8
 }
 .section {
-    padding: 36px 0 86px;
+    padding: 36px 0 86px
 }
 .section-title {
     display: flex;
     align-items: end;
     justify-content: space-between;
     gap: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 24px
 }
 .section-title h2 {
     font: 400 38px var(--serif);
@@ -154,12 +154,12 @@ h1,h2,h3,p {
     color: var(--muted);
     font-size: 12px;
     line-height: 1.7;
-    margin-bottom: 3px;
+    margin-bottom: 3px
 }
    .maker-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 16px;
+    gap: 16px
 }
 .maker-card {
     position: relative;
@@ -175,12 +175,12 @@ h1,h2,h3,p {
 }
 .maker-card:hover {
     border-color: rgba(166,83,63,.28);
-    transform: translateY(-2px);
+    transform: translateY(-2px)
 }
 .maker-card .maker-index {
     font: 10px var(--mono);
     color: var(--accent);
-    letter-spacing: .16em;
+    letter-spacing: .16em
 }
 .maker-card .maker-art {
     position: absolute;
@@ -189,11 +189,11 @@ h1,h2,h3,p {
     top: 53px;
     opacity: .32;
     transform: rotate(-14deg);
-    transition: .4s;
+    transition: .4s
 }
 .maker-art:hover .maker-art {
     transform: rotate(-7deg) scale(1-08);
-    opacity: .52;
+    opacity: .52
 }
 .maker-art img {
     width: 100%;
@@ -202,43 +202,43 @@ h1,h2,h3,p {
 .maker-card h3 {
     position: relative;
     margin: auto 0 8px;
-    font: 400 34px var(--serif);
+    font: 400 34px var(--serif)
 }
 .maker-card p {
     position: relative;
     margin: 0;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 12px
 }
 .maker-card .count {
     position: absolute;
     right: 25px;
     bottom: 25px;
     color: var(--accent);
-    font: 10px var(--mono);
+    font: 10px var(--mono)
 }
 .small-note {
     border-top: 1px solid var(--line);
     padding: 20px 0 32px;
     color: var(--muted);
     font-size: 10px;
-    line-height: 1.7;
+    line-height: 1.7
 }
 .maker-hero {
     padding: 38px 0 28px;
 }
 .maker-hero h1 {
     font-size: clamp(52px,7vw,78px);
-    margin: 19px 0;
+    margin: 19px 0
 }
 .maker-hero p {
     max-width: 610px;
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 .aircraft-grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-area: 15px;
+    grid-area: 15px
 }
 .aircraft-card {
     min-height: 340px;
@@ -250,23 +250,23 @@ h1,h2,h3,p {
     text-decoration: none;
     position: relative;
     overflow: hidden;
-    transition: .23s;
+    transition: .23s
 }
 .aircraft-card:hover {
     border-color: rgba(166,83,63,.28);
     transform: translateY(-2px);
-    background: #f0f1ec;
+    background: #f0f1ec
 }
 .aircraft-card .tag {
     color: var(--accent);
     font: 10px var(--mono);
     letter-spacing: .12em;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .aircraft-card .plane-art  {
     height: 174px;
     display: grid;
-    place-items: center;
+    place-items: center
 }
 .aircraft-card .plane-art img {
     width: 90%;
@@ -274,10 +274,10 @@ h1,h2,h3,p {
     object-fit: contain;
     transform: rotate(-10deg) scale(.9);
     filter: brightness(.6) saturate(.6) drop-shadow(0 12px 12px rgba(0,0,0,.14));
-    transition: .3s;
+    transition: .3s
 }
 .aircraft-card:hover .plane-art img {
-    transform: rotate(-4deg) scale(1);
+    transform: rotate(-4deg) scale(1)
 }
 .aircraft-card h2 {
     margin: 0 0 7px;
@@ -287,7 +287,7 @@ h1,h2,h3,p {
     color: var(--muted);
     font-size: 11px;
     line-height: 1.6;
-    margin-bottom: 17px;
+    margin-bottom: 17px
 }
 .card-foot {
     margin-top: auto;
@@ -297,9 +297,311 @@ h1,h2,h3,p {
     justify-content: space-between;
     color: var(--muted);
     font: 9px var(--mono);
-    letter-spacing: .06em;
+    letter-spacing: .06em
 }
 .card-foot b {
     color: var(--text);
-    font: 11px  var(--sans);
+    font: 11px  var(--sans)
+}
+.detail-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0 44px
+}
+.detail-copy h1 {
+    font-size: clamp(51px,6vw,78px);
+    margin: 19px 0 14px
+}
+.detail-copy .subhead {
+    color: var(--accent);
+    font: 10px var(--mono);
+    letter-spacing: .15em;
+    text-transform: uppercase
+}
+.detail-copy .intro {
+    font-size: 14px
+}
+.model-stage {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: linear-gradient(145deg,#e8ece8,#d9dfda);
+    display: grid;
+    place-items: center
+}
+.model-stage:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: .2;
+    background-image: linear-gradient(rgba(37,46,48,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(37,46,48,.07) 1px,transparent 1px);
+    background-size: 40px 40px
+}
+.model-stage:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    width: 250px;
+    height: 250px;
+    transform: translate3d(-50.-50%);
+    border: 1px solid rgba(166,83,63,.15);
+    border-radius: 50%;
+    box-shadow: 0 0 0 42px rgba(166,83,63,.025),0 0 0 84px rgba(166,83,63,.015)
+}
+.model-stage,.stage-bottom {
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    right: 18px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font: 9px var(--mono);
+    letter-spacing: .12em;
+    text-transform: uppercase
+}
+.stage-label {
+    top: 17px;
+}
+.stage-bottom {
+    bottom: 18px
+}
+.jet-model {
+    position: relative;
+    z-index: 1;
+    width: 83%;
+    filter: drop-shadow(0 12px 14px rgba(30,40,40,.1));
+    transform: perspective(900px) rotateX(49deg) rotateZ(-12deg);
+    transition: transform .15s
+}
+.jet-model img {
+    display: block;
+    width: 100%
+}
+.turn-control {
+    position:absolute;
+    z-index: 3;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    text-align: center
+}
+.turn-control label {
+    display: block;
+    color: var(--muted);
+    font: 9px var(--mono);
+    letter-spacing: .12em;
+    text-transform: uppercase
+}
+.turn-control input {
+        width: 100%;
+        accent-color: var(--accent);
+        cursor: ew-resize
+}
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
+}
+.fact {
+    padding: 19px 18px;
+    border-right: 1px solid var(--line);
+}
+.fact:first-child {
+    padding-left: 0
+}
+.fact:last-child {
+    border: 0
+}
+.fact span {
+    display: block;
+    color: var(--muted);
+    font: 9px var(--mono);
+    letter-spacing: .13em;
+    text-transform: none;
+    margin-bottom: 8px
+}
+.fact strong {
+    font-size: 13px;
+    font-weight: 600
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+    padding: 52px 0
+}
+.info-grid h2 {
+    font: 400 31px var(--serif);
+    margin-bottom: 15px
+}
+.info-grid p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8
+}
+.variant-list {
+    display: grid;
+    gap: 10px
+}
+.variant {
+    padding: 14px;
+    border: 1px solid var(--line);
+    background: var(--panel)
+}
+.variant strong {
+    display: block;
+    color: var(--accent);
+    font: 11px var(--mono);
+    margin-bottom: 5px
+}
+.variant span {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.5
+}
+.source-box {
+    border-top: 1px solid var(--line);
+    padding: 22px 0 35px;
+    color: var(--muted);
+    font-size: 10px
+}
+.source-box a  {
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 8px
+}
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 20px 0 28px;
+    color: var(--muted);
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+.footer a {
+    text-decoration: none
+}
+.footer a:hover {
+    color: var(--accent)
+}
+@media(max-width:850px) {
+    .aircraft-grid {
+        grid-template-columns: repeat(2,1fr)
+    }
+    .detail-hero  {
+        grid-template-columns: 1fr
+    }
+    .model-stage {
+        height: 350px
+    }
+    .detail-copy {
+        padding: 10px 0
+    }
+    .section-title {
+        align-items: start;
+        flex-direction: column
+    }
+    .section-title p {
+        margin: 0
+    }
+    .facts {
+        grid-template-columns: repeat(2,1fr)
+    }
+    .fact:nth-child(2) {
+        border-right: 0
+    }
+    .fact:nth-child(-2+2) {
+        border-bottom: 1px solid var(--line)
+    }
+    .fact:first-child {
+        padding-left: 18px
+    }
+}
+@media(max-width:580px)  {
+    .shell {
+        width: calc(100% - 32px)
+    }
+    .topbar {
+        height: 68px
+    }
+    .nav {
+        gap: 12px;
+        font-size: 1px
+    }
+    .nav a:nth-child(2) {
+        display: none
+    }
+    .home-hero {
+        padding: 58p 0 36px
+    }
+    .home-hero h1 {
+        font-size: 60px
+    }
+    .maker-grid,.aircraft-grid,.info-grid {
+        grid-template-columns: 1fr
+    }
+    .maker-card {
+        min-height: 280px
+    }
+    .aircraft-card {
+        min-height: 310x
+    }
+    .aircraft-card .plane-art {
+        height: 155px
+    }
+    .section {
+        padding-bottom: 60px
+    }
+    .section-title h2 {
+        font-size: 34px
+    }
+    .maker-hero {
+        padding-top: 24px
+    }
+    .maker-hero h1 {
+        font-size: 55px
+    }
+    .detail-hero {
+        padding-top: 5px
+    }
+    .detail-copy h1 {
+        font-size: 57px
+    }
+    .model-stage {
+        height: 310px
+    }
+    .info-grid {
+        gap: 20px;
+        padding: 38px 0
+    }
+    .fact {
+        padding: 16px 12px
+    }
+    .fact:first-child {
+        padding-left: 12px
+    }
+    .fact strong {
+        font-size: 12px
+    }
+    .footer {
+        display: block;
+        line-height: 1.7
+    }
+    .footer div+div {
+        margin-top: 8px
+    }
+}
+@media(prefers-reduced-motion:reduce) {
+    * {
+        scroll-behavior: auto!important;
+        transition-duration: .01ms!important
+    }
 }
