@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250">
+  <title>Stylized top view of the F-22 Raptor</title>
+  <path fill="#bdc9b4" d="M230 12 242 43 249 76 375 119 414 153 404 164 258 128 255 176 303 205 298 217 283 220 230 197 177 220 162 217 157 205 205 176 202 128 56 164 46 153 85 119 211 76 218 43Z"/>
+  <path fill="#aebbaa" d="m184 144-29 49 13 8 43-36-3-25Zm92 0 29 49-13 8-43-36 3-25Z"/>
+  <path fill="none" stroke="#202820" stroke-width="3" stroke-linecap="round" opacity=".82" d="M230 20v177M213 83 81 125m166-42 132 42m-177 13-30 59m116-59 30 59M183 145l-23 43m117-43 23 43"/>
+  <path fill="#d3dec8" d="m221 49 9-23 9 23v31h-18z" opacity=".8"/>
+  <path fill="#899783" d="M226 112h8v50h-8z" opacity=".75"/>
+</svg>

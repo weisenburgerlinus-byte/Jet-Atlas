@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250">
+  <title>Stylized top view of the Sukhoi Su-57</title>
+  <path fill="#bdc9b4" d="M230 12 242 43 250 72 380 116 418 153 406 164 266 127 260 154 313 197 307 210 292 213 230 188 168 213 153 210 147 197 200 154 194 127 54 164 42 153 80 116 210 72 218 43Z"/>
+  <path fill="#aebbaa" d="m180 142-33 52 14 8 43-38-3-20Zm100 0 33 52-14 8-43-38 3-20Z"/>
+  <path fill="#d3dec8" d="m208 74-46 6 28 21 19-8zm44 0 46 6-28 21-19-8z" opacity=".85"/>
+  <path fill="none" stroke="#202820" stroke-width="3" stroke-linecap="round" opacity=".82" d="M230 19v169M212 78 83 120m165-42 129 42m-177 11-32 61m124-61 32 61M183 143l-28 45m105-45 28 45M219 154h22"/>
+  <path fill="#d3dec8" d="m221 48 9-23 9 23v28h-18z" opacity=".8"/>
+  <path fill="#899783" d="M226 111h8v49h-8z" opacity=".75"/>
+</svg>

@@ -72,7 +72,7 @@ button,input {
 .nav {
     display: flex;
     align-items: center;
-    grid-area: 25px;
+    gap: 25px;
     color: var(--muted);
     font-size: 12px
 }
@@ -352,7 +352,7 @@ h1,h2,h3,p {
     border-radius: 50%;
     box-shadow: 0 0 0 42px rgba(166,83,63,.025),0 0 0 84px rgba(166,83,63,.015)
 }
-.model-stage,.stage-bottom {
+.stage-label,.stage-bottom {
     position: absolute;
     z-index: 2;
     left: 18px;
@@ -371,12 +371,15 @@ h1,h2,h3,p {
     bottom: 18px
 }
 .jet-model {
-    position: relative;
-    z-index: 1;
-    width: 83%;
-    filter: drop-shadow(0 12px 14px rgba(30,40,40,.1));
-    transform: perspective(900px) rotateX(49deg) rotateZ(-12deg);
-    transition: transform .15s
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  width: min(80%, 420px);
+  max-width: 420px;
+  min-width: 0;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  transition: transform .15s ease-out;
 }
 .jet-model img {
     display: block;
@@ -534,7 +537,7 @@ h1,h2,h3,p {
     }
     .nav {
         gap: 12px;
-        font-size: 1px
+        font-size: 12px
     }
     .nav a:nth-child(2) {
         display: none
@@ -604,4 +607,31 @@ h1,h2,h3,p {
         scroll-behavior: auto!important;
         transition-duration: .01ms!important
     }
+}
+.detail-hero > *,
+.model.stage,
+.jet-model {
+    min-width: 0;
+}
+.jet-model {
+    transform: none;
+    transform-origin: center;
+}
+.jet-model  img {
+    width: min(88%, 340px);
+    max-width: 340px;
+    height: auto;
+}
+.three-d-stage .jet-3d-viewer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: var(--panel)
+}
+.three-d-stage .stage-label,
+.three-d-stage .stage-bottom {
+    pointer-events: none
 }
