@@ -10,7 +10,11 @@
     --orange: #b27c45;
     --serif: Georgia,'Times New Roman',serif;
     --sans: Arial,Helvetica,sans-serif;
-    --mono: 'Courier New',ui-monospace,monospace
+    --mono: 'Courier New',ui-monospace,monospace;
+    --rule: var(--line);
+    --surface: var(--panel);
+    --surface-shade: var(--panel2);
+    --ink: var(--text)
 }
 
 * {
@@ -650,4 +654,190 @@ h1,h2,h3,p {
 .three-d-stage .stage-label,
 .three-d-stage .stage-bottom {
     pointer-events: none
+}
+.weapon-section {
+    padding: 38px 0 50px;
+    border-top: 1px solid var(--rule)
+}
+.weapon-loadout {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 14px;
+    padding: 20px;
+    border: 1px solid var(--rule);
+    background: var(--surface-shade);
+}
+.weapon-loadout h3 {
+    margin: 11px 0 7px;
+    font: 400 25px/1.15 var(--serif);
+    letter-spacing: -.02em;
+}
+.weapon-loadout p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+.weapon-loadout-list {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.weapon-loadout-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 11px 12px;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+}
+.weapon-loadout-list strong {
+    font-size: 11px;
+    font-weight: 600;
+}
+.weapon-loadout-list span {
+    color: var(--muted);
+    font-size: 10px;
+    text-align: right;
+}
+.weapon-caveat {
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+.weapon-list {
+    border-top: 1px solid var(--rule);
+}
+.weapon-entry {
+    border-bottom: 1px var(--rule);
+}
+.weapon-entry summary {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) minmax(110px, .55fr) 20px;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 4px;
+    list-style: none;
+    cursor: pointer;
+}
+.weapon-entry summary::-webkit-details-marker {
+    display: none;
+}
+.weapon-entry summary::after {
+    color: var(--accent);
+    content: '+';
+    font-size: 18px;
+    text-align: right;
+}
+.weapon-entry[open] summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+.weapon-number {
+    color: var(--accent);
+    font: 9px var(--mono);
+}
+.weapon-name {
+    font: 400 18px/1.2 var(--serif);
+}
+.weapon-role {
+    color: var(--muted);
+    font: 9px var(--mono);
+    letter-spacing: .04em;
+    text-align: right;
+    text-transform: uppercase;
+}
+.weapon-detail {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(220px, .95fr);
+    gap: 26px;
+    padding: 0 36px 18px 64px;
+}
+.weapon-description p {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+.weapon-description strong {
+    color: var(--ink);
+}
+.weapon-data {
+    margin: 0;
+    border-top: 1px solid var(--rule);
+}
+.weapon-data div {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule);
+}
+.weapon-data dt {
+    color: var(--muted);
+    font-size: 10px;
+}
+.weapon-data dd {
+    margin: 0;
+    color: var(--ink);
+    font-size: 10px;
+    text-align: right;
+}
+.weapon-sources {
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.8;
+}
+.weapon sources a {
+    margin-left: 5px;
+    color: var(--accent);
+    text-underline-offset: 2px;
+}
+@media (max-width: 580px) {
+    weapon-loadout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .weapon-loadout-list li {
+    display: block;
+  }
+
+  .weapon-loadout-list span {
+    display: block;
+    margin-top: 4px;
+    text-align: left;
+  }
+
+  .weapon-entry summary {
+    grid-template-columns: 32px minmax(0, 1fr) 20px;
+    gap: 8px;
+  }
+
+  .weapon-role {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .weapon-entry summary::after {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .weapon-detail {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 4px 18px 40px;
+  }
+
+  .weapon-data div {
+    grid-template-columns: 80px 1fr;
+  }
 }
