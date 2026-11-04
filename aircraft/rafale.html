@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meat name="description" content="Explore the Dassault Rafale, its interactive 3D model, variants and key facts.">
+        <meta name="description" content="Explore the Dassault Rafale, its interactive 3D model, variants and key facts.">
             <title>Dassault Rafale -- Jet Atlas</title>
             <link rel="stylesheet" href="../assets/styles.css">
     </head>
@@ -16,7 +16,7 @@
 
             <nav class="nav" aria-label="Main navigation">
                 <a href="../index.html#manufacturers">All manufacturers</a>
-                <a href="..manufacturers/dassault-aviatioin.html">Dassault Aviation</a>
+                <a href="../manufacturers/dassault-aviation.html">Dassault Aviation</a>
             </nav>
         </header>
 
@@ -40,27 +40,18 @@
                     </p>
                 </div>
 
-                <div class="model-stage" aria-label="Interactive 3D model of the Dassault Rafale">
-                    <div class="stage-label">
-                        <span>Interactive 3D model</span>
-                        <span>01 / 01</span>
-                    </div>
-
+                <div class="model-stage three-d-stage" aria-label="Interactive 3D model of the Dassault Rafale">
+                    <div class="stage-label"><span>Interactive 3D model</span><span>Dassault Rafale</span></div>
                     <iframe
-                    title="Interactive 3D model of the Dassault Rafale by fauzan_3d"
-                    src="https://sketchfab.com/models/ef444e93505c4310b36e69e894011c66/embed?autostart=0&amp;ui_infos=1&amp;ui_controls=1"
-                    width="100%"
-                    height="100%"
-                    style="position: absolute; inset: 0; display: block;  width: 100%; height: 100%; border: 0;"
-                    allow="autoplay; fullscreen; xr-spatial-tracking"
-                    allowfullscreen
-                    referrerpolicy="strict-origin-when-cross-origin"
+                        class="jet-3d-viewer"
+                        title="Interactive 3D model of the Dassault Rafale by fauzan_3d"
+                        src="https://sketchfab.com/models/ef444e93505c4310b36e69e894011c66/embed?autostart=1&amp;ui_theme=dark"
+                        allow="autoplay; fullscreen; xr-spatial-tracking"
+                        allowfullscreen
+                        loading="eager"
+                        referrerpolicy="strict-origin-when-cross-origin"
                     ></iframe>
-
-                    <div class="stage-bottom">
-                        <span>Dassault Rafale</span>
-                        <span>Drag to rotate   Scroll to zoom</span>
-                    </div>
+                    <div class="stage-bottom"><span>Dassault Rafale</span><span>Drag to rotate · scroll to zoom</span></div>
                 </div>
             </section>
 
@@ -80,6 +71,226 @@
                 <div class="fact">
                     <span>VARIANTS</span>
                     <strong>B   C   M</strong>
+                </div>
+            </section>
+
+            <section class="section weapon-section" id="weapons" aria-labelledby="weapons-title">
+                <div class="section-title">
+                    <div>
+                        <div class="eyebrow">Weapons &amp; payload</div>
+                        <h2 id="weapons-title">What can the Rafale carry?</h2>
+                    </div>
+                    <p>The Rafale has 14 external store stations, or 13 on the carrier-based Rafale M.
+                        Its exact weapon fit depends on the aircraft variant, operator and mission.
+                    </p>
+                </div>
+
+                <div class="weapon-loadout">
+                    <div>
+                        <div class="eyebrow">External capacity</div>
+                        <h3>Up to 9.5 tonnes</h3>
+                        <p>Five stations can carry heavy stores or drop tanks.
+                            The built-in 30 mm cannon is separate from the external load.
+                        </p>
+                    </div>
+
+                    <ul class="weapon-loadout-list">
+                        <li>
+                            <strong>METEOR / MICA</strong>
+                            <span>Air-to-air missiles</span>
+                        </li>
+                        <li>
+                            <strong>AASM HAMMER / SCALP</strong>
+                            <span>Air-to-ground weapons</span>
+                        </li>
+                        <li>
+                            <strong>AM39 EXOCET</strong>
+                            <span>Air-to-sea missile</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="weapon-caveat">
+                    These are examples of weapons cleared for the Rafale, not one fixed loadout.
+                    The 14 stations and external-load figure describe carrying capacity; they do not
+                    mean every aircraft carries the same number or combination of weapons.
+                </p>
+
+                <div class="weapon-list">
+                    <details class="weapon-entry">
+                        <summary>
+                            <span class="weapon-number">01</span>
+                            <span class="weapon-name">METEOR</span>
+                            <span class="weapon-role">Air-to-air missile</span>
+                        </summary>
+
+                        <div class="weapon-detail">
+                            <div class="weapon-description">
+                                <p>
+                                    <strong>What it is:</strong>
+                                    A long-range air-to-air missile powered by a solid-fuel ramjet.
+                                </p>
+                                <p>
+                                    <strong>How it works:</strong>
+                                    An active radar seeker supports guidance near the end of flight.
+                                    A data link can provide updates while the missile is in flight.
+                                </p>
+                            </div>
+
+                            <dl class="weapon-data">
+                                <div>
+                                    <dt>Guidance</dt>
+                                    <dd>Inertial navigation, data link and active radar</dd>
+                                </div>
+                                <div>
+                                    <dt>Propulsion</dt>
+                                    <dd>Solid-fuel ramjet</dd>
+                                </div>
+                                <div>
+                                    <dt>Warhead</dt>
+                                    <dd>Blast-fragmentation</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </details>
+
+                    <details class="weapon-entry">
+                        <summary>
+                            <span class="weapon-number">02</span>
+                            <span class="weapon-name">MICA</span>
+                            <span class="weapon-role">Air-to-air missile</span>
+                        </summary>
+
+                        <div class="weapon-detail">
+                            <div class="weapon-description">
+                                <p>
+                                    <strong>What it is:</strong>
+                                    An air-to-air missile available with infrared or active radar seeker options.
+                                </p>
+                                <p>
+                                    <strong>How it works:</strong>
+                                    The chosen seeker tracks the target, while the missile's onboard
+                                    guidance system controls its flight after release.
+                                </p>
+                            </div>
+
+                            <dl class="weapon-data">
+                                <div>
+                                    <dt>Guidance</dt>
+                                    <dd>Infrared or active radar</dd>
+                                </div>
+                                <div>
+                                    <dt>Propulsion</dt>
+                                    <dd>Solid-propellant rocket motor</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Short- and beyond-visual-range air combat</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </details>
+
+                    <details class="weapon-entry">
+                        <summary>
+                            <span class="weapon-number">03</span>
+                            <span class="weapon-name">AASM HAMMER</span>
+                            <span class="weapon-role">Guided air-to-ground weapon</span>
+                        </summary>
+
+                        <div class="weapon-detail">
+                            <div class="weapon-description">
+                                <p>
+                                    <strong>What it is:</strong>
+                                    A modular weapon that combines a compatible bomb body with guidance
+                                    and range-extension kits.
+                                </p>
+                                <p>
+                                    <strong>How it works:</strong>
+                                    Depending on the kit, it uses inertial and satellite navigation,
+                                    infrared imaging, or laser guidance to adjust its flight.
+                                </p>
+                            </div>
+
+                            <dl class="weapon-data">
+                                <div>
+                                    <dt>Guidance</dt>
+                                    <dd>INS/GPS, infrared imaging or laser</dd>
+                                </div>
+                                <div>
+                                    <dt>Construction</dt>
+                                    <dd>Bomb body, guidance kit and range kit</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </details>
+
+                    <details class="weapon-entry">
+                        <summary>
+                            <span class="weapon-number">04</span>
+                            <span class="weapon-name">SCALP</span>
+                            <span class="weapon-role">Stand-off cruise missile</span>
+                        </summary>
+
+                        <div class="weapon-detail">
+                            <div class="weapon-description">
+                                <p>
+                                    <strong>What it is:</strong>
+                                    A long-range, air-launched cruise missile.
+                                </p>
+                                <p>
+                                    <strong>How it works:</strong>
+                                    Its navigation combines inertial and satellite data with terrain
+                                    reference. An imaging infrared seeker compares the target area with
+                                    stored imagery during the final phase.
+                                </p>
+                            </div>
+
+                            <dl class="weapon-data">
+                                <div>
+                                    <dt>Navigation</dt>
+                                    <dd>Inertial, GPS and terrain reference</dd>
+                                </div>
+                                <div>
+                                    <dt>Final guidance</dt>
+                                    <dd>Imaging infrared seeker</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </details>
+
+                    <details class="weapon-entry">
+                        <summary>
+                            <span class="weapon-number">05</span>
+                            <span class="weapon-name">AM39 EXOCET</span>
+                            <span class="weapon-role">Air-launched anti-ship missile</span>
+                        </summary>
+
+                        <div class="weapon-detail">
+                            <div class="weapon-description">
+                                <p>
+                                    <strong>What it is:</strong>
+                                    The air-launched member of the Exocet anti-ship missile family.
+                                </p>
+                                <p>
+                                    <strong>How it works:</strong>
+                                    The Exocet family uses active radar homing and a low-level
+                                    sea-skimming flight profile.
+                                </p>
+                            </div>
+
+                            <dl class="weapon-data">
+                                <div>
+                                    <dt>Guidance</dt>
+                                    <dd>Active radar homing</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Air-to-sea</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </details>
                 </div>
             </section>
 
@@ -139,6 +350,21 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 >CC BY 4.0</a>
+                <p>
+                    Weapons and load data:
+                    <a href="https://www.dassault-aviation.com/en/defense/rafale/adapt-and-deliver/"
+                    target="_blank" rel="noopener noreferrer">Dassault Aviation — Rafale weapons</a>
+                    <a href="https://www.mbda-systems.com/products/air-dominance/meteor"
+                    target="_blank" rel="noopener noreferrer">MBDA — METEOR</a>
+                    <a href="https://www.mbda-systems.com/products/air-dominance/mica-family/mica"
+                    target="_blank" rel="noopener noreferrer">MBDA — MICA</a>
+                    <a href="https://www.safran-group.com/products-services/aasm-hammer-tm-highly-agile-modular-munition-extended-range"
+                    target="_blank" rel="noopener noreferrer">Safran — AASM HAMMER</a>
+                    <a href="https://www.mbda-systems.com/products/deep-strike/storm-shadow-scalp"
+                    target="_blank" rel="noopener noreferrer">MBDA — SCALP</a>
+                    <a href="https://www.mbda-systems.com/products/deep-strike/exocet-family/exocet-am39"
+                    target="_blank" rel="noopener noreferrer">MBDA — AM39 EXOCET</a>
+                </p>
             </section>
         </main>
 
